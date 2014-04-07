@@ -1,0 +1,37 @@
+@import "compass/css3/images";
+
+$inline-block-space: 4;
+$total: 1024 - $inline-block-space;
+
+.new {
+	font-size: 12px;
+}
+
+
+body {
+	height: auto;
+	width: 1024px;
+	margin: 0 auto;
+	//border: 2px solid black;
+}
+
+.clock {
+	width: $total*0.5px ;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	vertical-align: top;
+	//border: 1px solid black;
+}
+
+#clock_canvas {
+	margin: 50px auto;
+	display: block;
+	border-radius: 500px;
+	background-color: #ffc200; // Old browsers
+	@include filter-gradient(#ffc200, #d90000, horizontal); // IE6-8
+	// IE9 SVG, needs conditional override of 'filter' to 'none'
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top, #ffc200 0%,#d90000 100%));
+	//@include background-image(linear-gradient(top, rgb(0,192,255) 0%,rgb(24,0,255) 100%));
+}

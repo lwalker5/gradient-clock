@@ -1,0 +1,29 @@
+.new {
+  font-size: 12px;
+}
+
+body {
+  height: auto;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.clock {
+  width: 510px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: top;
+}
+
+#clock_canvas {
+  margin: 50px auto;
+  display: block;
+  border-radius: 500px;
+  background-color: #ffc200;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFFC200', endColorstr='#FFD90000');
+  background-image: -moz-linear-gradient(top, #ffc200 0%, #d90000 100%);
+  background-image: -webkit-linear-gradient(top, #ffc200 0%, #d90000 100%);
+  background-image: linear-gradient(to bottom, #ffc200 0%, #d90000 100%);
+}
